@@ -29,8 +29,7 @@ for i in range( len(g) ):
         if g[i][j] == '@':
             if isWorthy(i, j):
                 ans += 1
-                # g[i][j] = 'X'
 
 print(ans)
-# for gr in g:
-#     print(gr)
+
+# Answer:- check: 13, input: 1604

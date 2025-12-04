@@ -41,3 +41,5 @@ while True:
         summ += ans
 
 print(summ)
+
+# Answer:- check: 43, input: 9397
