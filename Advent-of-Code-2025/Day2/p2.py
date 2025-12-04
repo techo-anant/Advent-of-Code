@@ -10,11 +10,10 @@ pattern = r"^(\d+)\1+$"
 
 invalid = 0
 
-for range in ranges:
-    begin, end = range.split('-')
+for bound in ranges:
+    begin, end = bound.split('-')
     b, e = int(begin), int(end)
     i = b
-
     while i < e+1:
         num = str(i)
         if re.match(pattern, num):
@@ -22,3 +21,4 @@ for range in ranges:
         i += 1
     
 print(invalid)
+

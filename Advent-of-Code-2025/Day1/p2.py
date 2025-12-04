@@ -4,6 +4,8 @@ num_0 = 0
 with open('input.txt', 'r') as f:
     lines = f.read().splitlines()
 
+# lines = [line.strip() for line in open('input.txt', 'r').readlines()]
+
 for line in lines:
 
     if line[0] == 'L':
