@@ -8,12 +8,12 @@ directions = [
     [0,1], [1,0], [-1, 0], [0, -1], [1, 1], [-1, -1], [-1, 1], [1, -1]
 ]
 
-def isWorthy( x, y , grid):
+def isWorthy( x, y, grid):
     fewer = 0
     for d in directions:
         try:
-            new_i = i-d[0]
-            new_j = j-d[1]
+            new_i = x-d[0]
+            new_j = y-d[1]
             if new_i < 0 or new_j < 0:
                 continue
             if grid[new_i][new_j] == '@':

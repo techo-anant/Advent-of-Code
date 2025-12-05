@@ -11,8 +11,8 @@ def isWorthy( x, y ):
     fewer = 0
     for d in directions:
         try:
-            new_i = i-d[0]
-            new_j = j-d[1]
+            new_i = x-d[0]
+            new_j = y-d[1]
             if new_i < 0 or new_j < 0:
                 continue
             if g[new_i][new_j] == '@':
@@ -27,8 +27,7 @@ ans = 0
 for i in range( len(g) ):
     for j in range( len(g[0]) ):
         if g[i][j] == '@':
-            if isWorthy(i, j):
-                ans += 1
+            ans += 1 if isWorthy(i, j) else 0
 
 print(ans)
 
