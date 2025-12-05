@@ -1,5 +1,4 @@
 fileName = 'input.txt'
-
 lines = [line.strip() for line in open(fileName, 'r').readlines()]
 
 bounds = lines[:lines.index('')]
