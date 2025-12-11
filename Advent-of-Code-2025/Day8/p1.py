@@ -38,4 +38,4 @@ for j in range(3):
 
 print(mult)
 
-#Answer:- check: 40, input: 83520
+# #Answer:- check: 40, input: 83520

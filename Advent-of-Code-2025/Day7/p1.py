@@ -3,7 +3,7 @@ lines = [list(line.strip()) for line in open(fileName, 'r').readlines()]
 
 m, n = len(lines), len(lines[0])
 def dfs( x, y):
-    if x == m - 1 or y < 0 or y >= n or lines[x][y] == '|':
+    if lines[x][y] == '|':
         return 0
 
     try:
